@@ -50,7 +50,7 @@ nav a:hover{color:var(--paper);border-bottom-color:var(--soft)}
 .band{margin:0}
 .band img{width:100%;height:clamp(220px,32vw,440px);object-fit:cover}
 .band figcaption{padding:1rem 0 1.1rem;font-size:.97rem}
-.band strong,summary,footer .brand{color:var(--paper)}
+.band strong,summary,.brand:hover{color:var(--paper)}
 .strip{margin-top:2.6rem;padding:1.3rem 0;font-size:.95rem}
 .strip .w{display:flex;flex-wrap:wrap;gap:.4rem 2rem}
 .strip strong,.n{letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;font-weight:700}
@@ -92,25 +92,27 @@ nav a:hover{color:var(--paper);border-bottom-color:var(--soft)}
 form,.f{display:flex;flex-direction:column;gap:.95rem}
 .f{gap:.3rem}
 .f label{font-weight:600;font-size:.95rem}
-.f label::after{content:" *";color:var(--acc2)}
 input,textarea{font:inherit;padding:.65rem .75rem;border:1.5px solid var(--ink);background:#fff;color:var(--ink);width:100%;border-radius:0}
 textarea{min-height:6.5rem;resize:vertical}
 .pair{display:grid;gap:.95rem}
 @media(min-width:560px){.pair{grid-template-columns:2fr 1fr}}
 .trap{position:absolute;left:-9999px}
 .sent{background:#fff;border:1px solid var(--line);border-top:4px solid var(--acc);padding:1.6rem 1.4rem;margin-bottom:2rem}
+.sent p{max-width:64ch}
 @media(max-width:899px){.zv-entry-row{grid-template-columns:auto 1fr auto}.zv-entry-line{grid-column:2;text-align:left}.zv-take-out{grid-column:3}}
 footer{margin-top:3.5rem;padding:1.5rem 0 2rem;font-size:.93rem}
 footer a{color:var(--dim)}
 details{border-top:1px solid #2B4557;padding-top:1rem;max-width:80ch}
 summary{cursor:pointer;font-weight:600}
 details p{margin:.7rem 0 0}
-.sec,.sent,#top{scroll-margin-top:70px}
+.sec,.sent{scroll-margin-top:70px}
+#ordering{scroll-margin-top:100px}
+.sec+.band{margin-top:clamp(2rem,4vw,3.4rem)}
 @media(max-width:640px){.top{position:static}nav{flex-basis:100%;order:3;margin-top:-.4rem}nav a{font-size:.88rem;padding:.25rem .45rem}body{font-size:16px}}
 </style>
 </head>
 <body>
-<header class="top" id="top">
+<header class="top">
 <div class="w">
 <a class="brand" href="#top"><span class="glyph" aria-hidden="true"><span></span></span>Zovi</a>
 <nav aria-label="Shop"><a href="#tees">Tees &amp; polos</a><a href="#shirts">Shirts</a><a href="#trousers">Trousers</a><a href="#guide">Fit &amp; fabric</a><a href="#ordering">Ordering</a><a href="#checkout">Order</a></nav>
@@ -142,6 +144,10 @@ details p{margin:.7rem 0 0}
 <li class="zv-prod"><img src="https://shop-cdn.misc-e60a.workers.dev/zovi/weave-brick-striped.webp" alt="Brick and cream striped cotton, the stripes running with the grain" width="560" height="700" loading="lazy" decoding="async"><div class="pb"><h3 class="zv-caption">Yarn-dyed striped polo, brick</h3><p class="blurb">Stripes dyed into the yarn before knitting, so they cannot wash off.</p><div class="money"><span class="zv-cost">$15.95</span><span class="sku">tp-08</span></div><button class="zv-into" type="button" data-sku="tp-08" data-name="Yarn-dyed striped polo, brick" data-price="1595" data-img="https://shop-cdn.misc-e60a.workers.dev/zovi/weave-brick-striped.webp">Add to bag</button></div></li>
 </ul>
 </section>
+<figure class="band">
+<img src="https://shop-cdn.misc-e60a.workers.dev/zovi/band-ink-cloth.webp" alt="Ink coloured cotton cloth photographed flat, two woven buttons in the light" width="1400" height="525" loading="lazy" decoding="async">
+<figcaption><div class="w"><strong>Ink, before it is anything.</strong> One roll, one colour, and a cutting table. Shirts come off the machines in runs of forty to sixty, and when a colour sells out we cut it again rather than replace it with something new.</div></figcaption>
+</figure>
 
 <section class="w sec" id="shirts">
 <div class="head"><div><span class="n">02 / SHELF TWO</span><h2>Shirts</h2></div><p>Oxford, poplin and brushed twill. Checks, plains and woven stripes, cut long enough to stay tucked when you sit down.</p></div>
@@ -170,6 +176,10 @@ details p{margin:.7rem 0 0}
 <li class="zv-prod"><img src="https://shop-cdn.misc-e60a.workers.dev/zovi/twill-ink-seam.webp" alt="A close view of ink coloured cotton, the seam running down the centre" width="560" height="700" loading="lazy" decoding="async"><div class="pb"><h3 class="zv-caption">Cotton drill trouser, black</h3><p class="blurb">Drill woven tight enough to stand up on its own the first week.</p><div class="money"><span class="zv-cost">$26.95</span><span class="sku">tr-08</span></div><button class="zv-into" type="button" data-sku="tr-08" data-name="Cotton drill trouser, black" data-price="2695" data-img="https://shop-cdn.misc-e60a.workers.dev/zovi/twill-ink-seam.webp">Add to bag</button></div></li>
 </ul>
 </section>
+<figure class="band">
+<img src="https://shop-cdn.misc-e60a.workers.dev/zovi/band-folded-stack.webp" alt="Six pairs of cotton trousers folded into a stack on an old wooden chair" width="1024" height="384" loading="lazy" decoding="async">
+<figcaption><div class="w"><strong>Six pairs, six colours, one block.</strong> The chino pattern has not changed in four cuttings. Only the cloth and the colour move, which is what lets a pair you bought last year still match.</div></figcaption>
+</figure>
 
 <div class="strip"><div class="w"><strong>Honest limits</strong><span>No tailoring, no alterations</span><span>No womenswear, no childrenswear</span><span>Tees stop at 2XL, shirts at a 46 inch chest</span><span>No outerwear, knitwear or footwear</span><span>India only, no same-day parcels</span><span>No stock claims we cannot keep</span></div></div>
 
@@ -181,7 +191,7 @@ details p{margin:.7rem 0 0}
 <div id="ordering"><p class="eye">Ordering, delivery and returns</p><h2>How ordering works</h2>
 <p style="margin-top:.8rem"><strong>One:</strong> fill the bag. Your browser keeps it; it never reaches us. <strong>Two:</strong> send it as an order request. The form emails the bag as a plain list with your name, address and sizes. Nothing is charged when you press send; there is no payment step here.</p>
 <p><strong>Three:</strong> we reply by hand, usually that evening, never past the second working day, naming what is on the rack, what awaits the next cutting run, and the total with delivery at cost. <strong>Four:</strong> you confirm, then pay the shop directly, off this website.</p>
-<p>Delivery within India only, two to seven working days. Returns within ten days of delivery, unworn, unwashed, tags on.</p></div>
+<p>Delivery within India only, usually two to seven working days from dispatch. Returns within ten days of delivery, unworn, unwashed, tags on.</p></div>
 </section>
 
 <section class="w sec" id="cart">
@@ -244,7 +254,7 @@ details p{margin:.7rem 0 0}
 <p>The bag sits in one key of this browser's local storage, on your own machine; nothing travels from it to us. No analytics, no cookies, no third-party scripts.</p>
 <p>The order form is delivered by FormSubmit as one email to orders@zovi.com; a hidden field traps spam. That email is kept while the order runs and as long as the shop's books require. Write to the same address to have your details deleted.</p>
 <p>Nothing is charged on this site. An order request is not a contract: we may accept or decline, and you may walk away until you accept our quoted total, the price that binds. Prices in US dollars, garment only; delivery at cost; India only. Returns within ten days of delivery, unworn, unwashed, tags on, for an exchange or refund of the garment; return postage is yours unless the mistake was ours. Last written August 2026.</p>
-</details><details id="zv-credits"><summary>Where the pictures came from</summary><p>Openly licensed photographs, cropped to our grid. 6 of them are CC0 or public domain; the rest are listed with their makers.</p><ul><li><b>Tuxedo shirt collar</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/8227708355" rel="nofollow noopener">source</a></li><li><b>Tuxedo shirt collar</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/8227708355" rel="nofollow noopener">source</a></li><li><b>161106-shirts-collared-hangers-closet.jpg</b> by r.nial.bradshaw via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/33227787@N05/31537211821" rel="nofollow noopener">source</a></li><li><b>161106-shirts-collared-hangers-closet.jpg</b> by r.nial.bradshaw via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/33227787@N05/31537211821" rel="nofollow noopener">source</a></li><li><b>161106-shirts-collared-hangers-closet.jpg</b> by r.nial.bradshaw via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/33227787@N05/31537211821" rel="nofollow noopener">source</a></li><li><b>Bijan Mens Jacket</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/20412900879" rel="nofollow noopener">source</a></li><li><b>Bijan Mens Jacket</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/20412900879" rel="nofollow noopener">source</a></li><li><b>Bijan Mens Jacket</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/20412900879" rel="nofollow noopener">source</a></li><li><b>Chino Pant Stack</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/26222122412" rel="nofollow noopener">source</a></li><li><b>Chino Pant Stack</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/26222122412" rel="nofollow noopener">source</a></li><li><b>Chino Pant Stack</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/26222122412" rel="nofollow noopener">source</a></li><li><b>Chino Pant Stack</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/26222122412" rel="nofollow noopener">source</a></li><li><b>Chino Pant Stack</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/26222122412" rel="nofollow noopener">source</a></li><li><b>Chino Pant Stack</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/26222122412" rel="nofollow noopener">source</a></li><li><b>161106-shirts-collared-hangers-closet.jpg</b> by r.nial.bradshaw via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/33227787@N05/31537211821" rel="nofollow noopener">source</a></li></ul></details>
+</details><details id="zv-credits"><summary>Where the pictures came from</summary><p>Openly licensed photographs, cropped to our grid. 3 of them are CC0 or public domain; the rest are listed with their makers.</p><ul><li><b>Tuxedo shirt collar</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/8227708355" rel="nofollow noopener">source</a></li><li><b>161106-shirts-collared-hangers-closet.jpg</b> by r.nial.bradshaw via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/33227787@N05/31537211821" rel="nofollow noopener">source</a></li><li><b>Bijan Mens Jacket</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/20412900879" rel="nofollow noopener">source</a></li><li><b>Chino Pant Stack</b> by Menswear Market via openverse, CC BY 4.0. <a href="https://www.flickr.com/photos/85546319@N04/26222122412" rel="nofollow noopener">source</a></li></ul></details>
 </div>
 </footer>
 <script>
@@ -417,7 +427,9 @@ if(!/[?&]sent=1/.test(window.location.search))return;
 var s=document.getElementById("zv-sent");
 if(!s)return;
 s.classList.remove("hide");
-window.setTimeout(function(){s.scrollIntoView()},0);
+document.title="Order request sent | Zovi";
+s.tabIndex=-1;
+window.setTimeout(function(){s.scrollIntoView();s.focus()},0);
 }
 function start(){
 paint();
